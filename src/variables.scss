@@ -1,0 +1,22 @@
+@mixin bgSetup {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+@mixin btn {
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1rem;
+    margin: .5rem;
+    transition: all .2s ease;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+    background: linear-gradient(to right, #8ea8ce, #2f5694);
+
+    &:hover {
+        transform: scale(1.02);
+        background: linear-gradient(to right, #2f5694, #8ea8ce);
+    }
+}
