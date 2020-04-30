@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.wrapper {
+    font-size: 2.5rem;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include bgSetup;
+
+    .stargazers {
+        display: flex;
+        justify-content: space-around;
+        word-wrap: break-word;
+        white-space: initial;
+        flex-wrap: wrap;
+        margin-top: -2rem;
+    }
+    
+    &>div {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    &>div>span {
+        font-weight: bold;
+    }
+
+    .btn {
+        @include btn;
+        margin: 1rem auto;
+    }
+}
