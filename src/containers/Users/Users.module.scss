@@ -1,0 +1,11 @@
+.wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    &>* {
+        flex: 0 0 49%;
+    }
+}
